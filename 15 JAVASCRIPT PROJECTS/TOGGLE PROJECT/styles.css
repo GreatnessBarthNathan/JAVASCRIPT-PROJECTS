@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: lightgray;
+}
+.navbar {
+  background: white;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+.navbar span {
+  color: blue;
+  margin-left: 5px;
+}
+.navbar i {
+  color: blue;
+  margin: 8px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar ul li {
+  margin: 20px;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar ul li:hover {
+  color: blue;
+}
+#toggle {
+  display: none;
+}
+
+@media (max-width: 570px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    text-align: left;
+    padding: 10px;
+    padding-top: 20px;
+    position: relative;
+  }
+  .links {
+    display: block;
+    height: auto;
+    transition: 1s;
+  }
+  .links-container {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .show-links {
+    height: 200px;
+  }
+  .navbar h1 {
+    margin-left: 0;
+    padding-left: 15px;
+  }
+  #toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    border: 1px solid blue;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  #toggle:hover {
+    transform: rotate(180deg);
+  }
+  .icons {
+    display: none;
+  }
+  .navbar ul li {
+    transition: 0.5s;
+  }
+
+  .navbar ul li:hover {
+    background: lightblue;
+    border-radius: 5px;
+  }
+}

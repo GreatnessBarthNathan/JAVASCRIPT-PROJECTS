@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: lightgrey;
+}
+.container {
+  background: white;
+  width: 600px;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 0 5px 15px grey;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding-top: 50px;
+  position: relative;
+  /* padding-bottom: 30px; */
+}
+.alert {
+  color: red;
+  position: absolute;
+  border-radius: 3px;
+  top: 7%;
+  display: none;
+  width: 85%;
+  text-align: center;
+}
+.alert-success {
+  color: green;
+  background: whitesmoke;
+  display: block;
+}
+.alert-danger {
+  color: red;
+  background: pink;
+  display: block;
+}
+
+h1 {
+  text-transform: capitalize;
+  font-family: verdana;
+}
+.input-container {
+  width: 500px;
+  height: 30px;
+  background: lightgray;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.input {
+  width: 420px;
+  background: lightgray;
+  padding: 5px;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  outline: none;
+}
+.btn {
+  position: relative;
+  background: rgb(111, 141, 240);
+  width: 80px;
+  border: none;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:active {
+  border: 2px solid blue;
+}
+.submit {
+  position: absolute;
+}
+.edit {
+  position: absolute;
+  visibility: hidden;
+}
+.item-container {
+  width: 500px;
+  height: auto;
+  visibility: hidden;
+}
+.show-container {
+  visibility: visible;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.items:hover {
+  background: lightgrey;
+}
+.items span {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.edit-btn {
+  border: none;
+  background: transparent;
+  color: green;
+}
+.edit-btn:active {
+  border: 2px solid blue;
+}
+.delete-btn {
+  border: none;
+  background: transparent;
+  color: red;
+}
+.delete-btn:active {
+  border: 2px solid blue;
+}
+.clear {
+  text-align: center;
+  margin: 30px;
+}
+.clear-btn {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: crimson;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  background: transparent;
+}

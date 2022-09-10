@@ -1,0 +1,53 @@
+.myDiv {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  position: relative;
+  /* margin: auto; */
+}
+
+.select {
+  color: blue;
+}
+
+main {
+  border: 1px solid black;
+  width: 302px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0;
+}
+.one {
+  background: black;
+  height: 100px;
+  width: 100px;
+}
+.two {
+  background: red;
+  height: 100px;
+  width: 100px;
+}
+.three {
+  background: blue;
+  height: 100px;
+  width: 100px;
+}
+.four {
+  background: green;
+  height: 100px;
+  width: 100px;
+}
+.five {
+  background: yellow;
+  height: 100px;
+  width: 100px;
+}
+.six {
+  background: purple;
+  height: 100px;
+  width: 100px;
+}

@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  width: 280px;
+  margin: auto;
+}
+
+header h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  margin: 10px;
+  margin-top: 50px;
+  font-size: 35px;
+}
+header p {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: darkgreen;
+  font-size: 15px;
+}
+.alert {
+  background: greenyellow;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  color: white;
+  position: absolute;
+  visibility: hidden;
+}
+.alert-success {
+  visibility: visible;
+  background: green;
+}
+.alert-danger {
+  visibility: visible;
+  background: red;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 280px;
+  margin: 15px auto;
+  margin-top: 20px;
+  gap: 10px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightgray;
+  height: 60px;
+  gap: 10px;
+}
+.title h3 {
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: bolder;
+}
+.title-input {
+  width: 220px;
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+.text-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: lightgray;
+  padding: 10px 0;
+}
+#textarea-input {
+  width: 220px;
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+.text-area h3 {
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: bolder;
+}
+.submit-btn {
+  padding: 15px;
+  color: white;
+  background: darkgreen;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.storage {
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  padding-bottom: 20px;
+}
+.contain {
+  width: auto;
+  padding: 10px;
+  box-shadow: 0 3px 7px black;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contain h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.view-btn {
+  background: darkblue;
+  width: 33.33%;
+  padding: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.delete-btn {
+  background: darkred;
+  width: 33.33%;
+  padding: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.edit-btn {
+  background: green;
+  width: 33.33%;
+  padding: 8px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.show-modal {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  width: 600px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  box-shadow: 0 3px 10px black;
+  position: relative;
+}
+.modal-content p {
+  font-size: 20px;
+}
+.modal-content h3 {
+  font-size: 25px;
+  text-transform: capitalize;
+}
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 15px;
+  padding: 5px 8px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background: white;
+  cursor: pointer;
+}

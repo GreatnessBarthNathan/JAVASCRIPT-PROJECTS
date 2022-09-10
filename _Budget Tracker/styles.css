@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: palegoldenrod;
+}
+header {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  margin-top: 50px;
+  text-align: center;
+}
+.earned {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.available {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.spent {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.earned h2 {
+  color: green;
+}
+.spent h2 {
+  color: red;
+}
+.input-container {
+  width: 35%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.description {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.amount {
+  width: 20%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.button-container {
+  margin: auto;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.income-btn {
+  color: white;
+  background: green;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.expense-btn {
+  color: white;
+  background: red;
+  padding: 10px 15px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.container {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  height: auto;
+  margin-top: 10px;
+}
+.label {
+  margin: auto;
+  margin-top: 100px;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.label h1 {
+  color: green;
+  font-size: 25px;
+}
+.label h2 {
+  color: red;
+  font-size: 25px;
+}
+.income-container {
+  width: 50%;
+  height: auto;
+}
+.expense-container {
+  width: 50%;
+  height: 100%;
+}
+.income {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  margin: 10px 0;
+  background: white;
+  position: relative;
+  border-radius: 10px;
+}
+.delete-income {
+  position: absolute;
+  right: 10px;
+  color: red;
+  background: white;
+  border: none;
+}
+.expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+  margin: 10px 0;
+  background: white;
+  position: relative;
+  border-radius: 10px;
+}
+.delete-expense {
+  position: absolute;
+  right: 10px;
+  color: red;
+  background: white;
+  border: none;
+}

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  background: lightgray;
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  text-align: center;
+  height: auto;
+  padding: 15px;
+}
+.container h1 {
+  margin: 10px;
+  padding: 10px;
+  font-family: verdana;
+}
+.player {
+  color: blue;
+}
+.computer {
+  color: red;
+}
+.button-container {
+  width: 80%;
+  margin: auto;
+}
+.button-container button {
+  width: 30%;
+  font-size: 12px;
+  padding: 5px;
+  text-transform: uppercase;
+}

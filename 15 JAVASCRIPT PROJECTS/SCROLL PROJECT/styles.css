@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url(/images/pexels-matheus-bertelli-4558394.jpg);
+  width: 100%;
+  height: 110vh;
+  background-position: center;
+  background-size: cover;
+  margin-top: -100px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  height: 80px;
+  margin: auto;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin: auto;
+  background: white;
+  z-index: 20;
+  box-shadow: 0 5px 15px black;
+}
+
+.navbar h1 {
+  color: blue;
+  font-size: 40px;
+}
+.navbar span {
+  color: red;
+}
+.links {
+  display: flex;
+  align-items: center;
+}
+.links li {
+  list-style: none;
+}
+.links li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px;
+  font-size: 15px;
+}
+.fixed-nav li a {
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.content {
+  color: white;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  transform: translateY(300px);
+  height: 200px;
+}
+.content h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 10px;
+  font-weight: bold;
+}
+.content p {
+  margin-bottom: 30px;
+}
+#explore {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid white;
+  margin: 20px;
+  padding: 10px 15px;
+}
+.sections {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(230, 248, 248);
+}
+#services {
+  background: white;
+}
+.sections h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.sections span {
+  color: blue;
+}
+footer {
+  background: black;
+  width: 100%;
+  height: 200px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+.top-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  color: white;
+  background: cyan;
+  padding: 4px;
+  border-radius: 3px;
+  font-size: 20px;
+  width: 30px;
+  visibility: hidden;
+  z-index: -100;
+}
+.show-link {
+  visibility: visible;
+  z-index: 100;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nav-toggle {
+  color: black;
+  font-size: 25px;
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+@media (max-width: 570px) {
+  header {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.75)
+      ),
+      url(/images/pexels-matheus-bertelli-4558394.jpg);
+    height: 120vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    margin-top: 0;
+  }
+  .navbar {
+    display: block;
+    background: white;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  .navbar h1 {
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+  .navbar span {
+    color: black;
+  }
+  .links {
+    display: block;
+    background: white;
+    padding-bottom: 10px;
+    height: auto;
+  }
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  .show-links {
+    display: block;
+    height: 200px;
+  }
+  .links li {
+    margin: 10px;
+    padding: 10px;
+    padding-left: 0;
+  }
+  .links li a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-weight: lighter;
+    /* margin: 20px; */
+    font-size: 20px;
+  }
+  .content {
+    color: white;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    transform: translateY(250px);
+    height: 200px;
+  }
+  .content h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 10px;
+    font-weight: bold;
+  }
+  footer {
+    background: black;
+    /* width: 100%; */
+    height: 200px;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 12px;
+    justify-content: center;
+    letter-spacing: 2px;
+  }
+  .nav-toggle {
+    color: black;
+    font-size: 25px;
+    background: transparent;
+    border: none;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 0 2px;
+    border: 1px solid blue;
+    transition: 0.3s;
+  }
+  .nav-toggle:hover {
+    transform: rotate(180deg);
+  }
+}
